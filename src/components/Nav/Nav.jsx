@@ -1,4 +1,5 @@
-import { Search } from '@material-ui/icons'
+import { Badge } from '@material-ui/core'
+import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import {
   Container,
@@ -8,7 +9,9 @@ import {
   SearchContainer,
   Input,
   Center,
-  Right
+  Right,
+  Logo,
+  MenuItem
 } from './Styles'
 
 
@@ -21,11 +24,22 @@ const Nav = () => {
           <Language>Sp</Language>
           <SearchContainer>
             <Input />
-            <Search />      
+            <Search style={{
+              color: "grey",
+              fontSize: 16
+            }}/>      
           </SearchContainer>
         </Left>
-        <Center>Center</Center>
-        <Right>Rig</Right>
+        <Center><Logo>LAMA.</Logo></Center>
+        <Right>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlined />
+            </Badge>
+          </MenuItem>
+        </Right>
       </Wrapper>
     </Container>
   )

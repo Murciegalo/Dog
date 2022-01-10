@@ -4,7 +4,7 @@ const Container = styled.div`
   height: 60px;
 `
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +32,21 @@ const Input = styled.input`
 
 const Center = styled.div`
   flex:1;
+  text-align: center;
+`
+const Logo = styled.div`
+  font-weight: bold;
 `
 const Right = styled.div`
   flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `
-export { Container, Wrapper, Left, Language, SearchContainer, Input, Center, Right }
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+`
+
+export { Container, Wrapper, Left, Language, SearchContainer, Input, Center, Logo, Right, MenuItem }
