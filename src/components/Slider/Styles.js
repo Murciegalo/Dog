@@ -5,6 +5,7 @@ const Container = styled.div`
   height: 100vh;
   display: flex;
   position: relative;
+  overflow: hidden;
 `
 const Arrow = styled.div`
   width: 50px;
@@ -23,32 +24,43 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.7;
 `
-
 const Wrapper = styled.div`
   height: 100%;
-
+  display: flex;
 `
-
 const Slide = styled.div`
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: flex;  
   align-items: center;
+  background-color: #${ props => props.bg};
 `
-
 const ImgContainer = styled.div`
-  height: 100%;
   flex: 1;
+  display: flex;
+  justify-content: center;
 `
-
 const Image = styled.img`
-  height: 80%;
-
 `
-
 const InfoContainer = styled.div`
   flex: 1;
+  width: 50%;
   padding: 50px;
 `
+const Title = styled.h1`
+  font-size: 70px;
+`
+const Desc = styled.p`
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500px;
+  letter-spacing: 3px;
+`
+const Button = styled.button`
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+`
 
-export { Container, Arrow, Wrapper, Slide, ImgContainer, Image, InfoContainer }
+export { Container, Arrow, Wrapper, Slide, ImgContainer, Image, InfoContainer, Title, Desc, Button }

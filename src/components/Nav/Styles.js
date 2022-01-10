@@ -33,6 +33,7 @@ const Input = styled.input`
 const Center = styled.div`
   flex:1;
   text-align: center;
+  font-size: 40px;
 `
 const Logo = styled.div`
   font-weight: bold;

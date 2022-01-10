@@ -6,7 +6,10 @@ import {
   Slide,
   ImgContainer,
   Image,
-  InfoContainer
+  InfoContainer,
+  Title,
+  Desc,
+  Button
 } from './Styles'
 
 const Slider = () => {
@@ -16,12 +19,24 @@ const Slider = () => {
         <ArrowLeftOutlined />  
       </Arrow>
       <Wrapper>
-        <Slide>
+        <Slide bg="#f5fafd">
           <ImgContainer>
-            <Image src="https://www.newshub.co.nz/home/lifestyle/2019/11/dog-years-are-a-myth-2-year-old-dogs-already-middle-aged-scientists/_jcr_content/par/video/image.dynimg.1280.q75.jpg/v1574572358818/GETTY-labrador-puppy-1120.jpg" />
+            <Image src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.uFogVrXWP3ahmi3BoUfEMwHaJ4%26pid%3DApi&f=1" />
           </ImgContainer>
           <InfoContainer>
-
+            <Title>SUMMER SALE</Title>
+            <Desc>DON'T COMPROMISE ON STYLE, GET 30% OFF ON NEW ARRIVALS</Desc>
+            <Button>SHOW ME</Button>
+          </InfoContainer>
+        </Slide>
+        <Slide bg="#fcf1ed">
+          <ImgContainer>
+            <Image src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.uFogVrXWP3ahmi3BoUfEMwHaJ4%26pid%3DApi&f=1" />
+          </ImgContainer>
+          <InfoContainer>
+            <Title>SUMMER SALE</Title>
+            <Desc>DON'T COMPROMISE ON STYLE, GET 30% OFF ON NEW ARRIVALS</Desc>
+            <Button>SHOW ME</Button>
           </InfoContainer>
         </Slide>
       </Wrapper>
