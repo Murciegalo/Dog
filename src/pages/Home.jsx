@@ -1,4 +1,5 @@
 import Announcement from '../components/Announcements/Announcement'
+import Categories from '../components/Categories/Categories'
 import Nav from '../components/Nav/Nav'
 import Slider from '../components/Slider/Slider'
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Announcement />
       <Nav/>
       <Slider />
+      <Categories />
     </div>
   )
 }
