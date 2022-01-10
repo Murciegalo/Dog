@@ -27,7 +27,10 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
-  transform: translateX(-100vw);
+  transition: all .6s ease;
+  transform: translateX(
+    ${props => props.slideIndex * -100}vw
+  );
 `
 const Slide = styled.div`
   width: 100vw;

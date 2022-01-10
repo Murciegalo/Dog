@@ -1,4 +1,6 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
+import {useState} from 'react'
+import {slideItems} from '../../data'
 import {
   Container,
   Arrow,
@@ -13,9 +15,14 @@ import {
 } from './Styles'
 
 const Slider = () => {
-
+  const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = direction => {
-
+    if(direction === 'left'){
+      setSlideIndex( slideIndex > 0 ? slideIndex - 1 : slideItems.length - 1)
+    }
+    else{
+      setSlideIndex( slideIndex < slideItems.length - 1 ? slideIndex + 1 : 0 )
+    }
   }
 
   return (
@@ -23,27 +30,19 @@ const Slider = () => {
       <Arrow direction = "left" onClick={() => handleClick('left')}>
         <ArrowLeftOutlined />  
       </Arrow>
-      <Wrapper>
-        <Slide bg="#f5fafd">
-          <ImgContainer>
-            <Image src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.uFogVrXWP3ahmi3BoUfEMwHaJ4%26pid%3DApi&f=1" />
-          </ImgContainer>
-          <InfoContainer>
-            <Title>SUMMER SALE</Title>
-            <Desc>DON'T COMPROMISE ON STYLE, GET 30% OFF ON NEW ARRIVALS</Desc>
-            <Button>SHOW ME</Button>
-          </InfoContainer>
+      <Wrapper slideIndex={slideIndex}>
+        {slideItems.map(el => (
+          <Slide bg={el.bg}>
+            <ImgContainer>
+              <Image src={el.img}/>
+            </ImgContainer>
+            <InfoContainer>
+              <Title>{el.title}</Title>
+              <Desc>{el.desc}</Desc>
+              <Button>SHOW ME</Button>
+            </InfoContainer>
         </Slide>
-        <Slide bg="#fcf1ed">
-          <ImgContainer>
-            <Image src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.uFogVrXWP3ahmi3BoUfEMwHaJ4%26pid%3DApi&f=1" />
-          </ImgContainer>
-          <InfoContainer>
-            <Title>SUMMER SALE</Title>
-            <Desc>NEW YEAR dresses, GET 20% OFF ON 2nd unit</Desc>
-            <Button>SHOW ME</Button>
-          </InfoContainer>
-        </Slide>
+        ))}
       </Wrapper>
       <Arrow direction = "right" onClick={() => handleClick('right')}>
         <ArrowRightOutlined /> 
