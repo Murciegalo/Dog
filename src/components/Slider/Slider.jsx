@@ -13,9 +13,14 @@ import {
 } from './Styles'
 
 const Slider = () => {
+
+  const handleClick = direction => {
+
+  }
+
   return (
     <Container>
-      <Arrow direction = "left">
+      <Arrow direction = "left" onClick={() => handleClick('left')}>
         <ArrowLeftOutlined />  
       </Arrow>
       <Wrapper>
@@ -35,12 +40,12 @@ const Slider = () => {
           </ImgContainer>
           <InfoContainer>
             <Title>SUMMER SALE</Title>
-            <Desc>DON'T COMPROMISE ON STYLE, GET 30% OFF ON NEW ARRIVALS</Desc>
+            <Desc>NEW YEAR dresses, GET 20% OFF ON 2nd unit</Desc>
             <Button>SHOW ME</Button>
           </InfoContainer>
         </Slide>
       </Wrapper>
-      <Arrow direction = "right">
+      <Arrow direction = "right" onClick={() => handleClick('right')}>
         <ArrowRightOutlined /> 
       </Arrow>
     </Container>
