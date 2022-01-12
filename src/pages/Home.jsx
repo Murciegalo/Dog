@@ -1,6 +1,7 @@
 import Announcement from '../components/Announcements/Announcement'
 import Categories from '../components/Categories/Categories'
 import Nav from '../components/Nav/Nav'
+import NewsLetter from '../components/NewsLetter/NewsLetter'
 import Products from '../components/Products/Products'
 import Slider from '../components/Slider/Slider'
 
@@ -12,7 +13,8 @@ const Home = () => {
       <Nav/>
       <Slider />
       <Categories />
-      <Products />    
+      <Products />  
+      <NewsLetter />  
     </div>
   )
 }
