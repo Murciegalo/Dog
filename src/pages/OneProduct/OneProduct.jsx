@@ -15,8 +15,13 @@ import { Container,
   Filter,
   FilterColor,
   FilterSize,
-  FilterSizeOption 
+  FilterSizeOption,
+  AddContainer,
+  AmountContainer,
+  Amount,
+  Button
 } from './OneProduct.styles'
+import { AddCircle, RemoveCircle } from '@material-ui/icons'
 
 
 const OneProduct = () => {
@@ -55,6 +60,14 @@ const OneProduct = () => {
               </FilterSize>
             </Filter>
           </FilterContainer>
+          <AddContainer>
+            <AmountContainer>
+              <RemoveCircle />
+              <Amount>1</Amount>
+              <AddCircle />
+            </AmountContainer>
+            <Button>ADD TO CART</Button>
+          </AddContainer>
         </InfoContainer>
       </Wrapper>
       <NewsLetter />

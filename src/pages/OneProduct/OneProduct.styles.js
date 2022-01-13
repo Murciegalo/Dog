@@ -63,3 +63,36 @@ export const FilterSize = styled.select`
 export const FilterSizeOption = styled.option`
 
 `
+export const AddContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+`
+export const AmountContainer = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  margin: 0 10px;
+`
+export const Amount = styled.span`
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+export const Button = styled.button`
+  padding: 15px;
+  border: 2px solid teal;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #f8f4f4;
+  }
+`
