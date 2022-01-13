@@ -1,9 +1,8 @@
-import Home from './pages/Home'
-import OneProduct from './pages/OneProduct/OneProduct';
-import Products from './pages/Products/Products';
+import Register from './pages/Register/Register'
 
 function App() {
-  return <OneProduct/>
+
+  return <Register/>
 }
 
 export default App;
