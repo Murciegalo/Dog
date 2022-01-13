@@ -1,8 +1,8 @@
-import Login from './pages/Login/Login'
+import Cart from './pages/Cart/Cart'
 
 function App() {
 
-  return <Login/>
+  return <Cart/>
 }
 
 export default App;
