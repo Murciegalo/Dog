@@ -64,5 +64,8 @@ export const Link = styled.a`
   font-size: 18px;
   text-decoration: underline;
   cursor: pointer;
-
+  &:hover {
+    text-decoration: none;
+    color: teal;
+  }
 `
