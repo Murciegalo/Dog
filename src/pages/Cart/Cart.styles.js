@@ -131,7 +131,8 @@ export const Hr = styled.div`
 `
 
 export const Summary = styled.div`
-  flex: 2;
-  background-color: red;
+  flex: 1;
+  border-left: 2px solid #eee;
+  padding: 20px;
 `
 

@@ -62,6 +62,7 @@ const Cart = () => {
               </ProductAmountContainer>
               <ProductPrice>$ 300</ProductPrice>
             </PriceDetail>
+          <Summary>Summary</Summary>
           </Product>
           <Hr color='#eee'/>
           <Product>
@@ -82,8 +83,9 @@ const Cart = () => {
               </ProductAmountContainer>
               <ProductPrice>$ 300</ProductPrice>
             </PriceDetail>
+            <Summary>Summary</Summary>
           </Product>
-          <Summary>Summary</Summary>
+          
         </Bottom>
       </Wrapper>
       <Footer />
