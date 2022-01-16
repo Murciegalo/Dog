@@ -45,7 +45,9 @@ export const Text = styled.div`
 export const Bottom = styled.div`
   display: flex;
   flex: 3;
+  flex-direction: column;
   margin: 20px;
+
 `
 
 export const Product = styled.div`
@@ -121,12 +123,15 @@ export const ProductPrice = styled.div`
   font-weight: 200;
 `
 
+export const Hr = styled.div`
+  width: 90%;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #eee;
+`
+
 export const Summary = styled.div`
   flex: 2;
   background-color: red;
-`
-
-export const Info = styled.div`
-
 `
 
