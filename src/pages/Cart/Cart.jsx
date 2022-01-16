@@ -10,9 +10,22 @@ import {
   TopTexts,
   Text,
   Bottom,
+  Product,
+  ProductDetail,
+  Image,
+  Details,
+  ProductName,
+  ProductId,
+  ProductColor,
+  ProductSize,
+  PriceDetail,
+  ProductAmountContainer,
+  ProductAmount,
+  ProductPrice,
   Info,
   Summary
 } from "./Cart.styles"
+import { Add, Remove } from '@material-ui/icons'
 
 
 const Cart = () => {
@@ -31,7 +44,26 @@ const Cart = () => {
           <TopButton type='filled'>Checkout</TopButton>
         </Top>
         <Bottom>
-          <Info>Info</Info>
+          <Product>
+            <ProductDetail>
+              <Image src='https://static.highsnobiety.com/thumbor/WeSY61IKVaOCFMO-NNUlrysjAnk=/1600x1067/static.highsnobiety.com/wp-content/uploads/2019/03/14131455/iceberg-motorsport-sneakers-ss19-07.jpg' />
+              <Details>
+                <ProductName><b>Product:</b> Jhon Doe Shoes</ProductName>
+                <ProductId><b>ID:</b> 112255663318</ProductId>
+                <ProductColor color='black'/>
+                <ProductSize><b>Size:</b> 46.5</ProductSize>
+              </Details>
+            </ProductDetail>
+            <PriceDetail>
+              <ProductAmountContainer>
+                <Add />
+                <ProductAmount>2</ProductAmount>
+                <Remove />
+              </ProductAmountContainer>
+              <ProductPrice>$ 300</ProductPrice>
+            </PriceDetail>
+          </Product>
+          <hr color='#eee'/>
           <Summary>Summary</Summary>
         </Bottom>
       </Wrapper>
