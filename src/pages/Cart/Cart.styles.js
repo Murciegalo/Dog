@@ -46,12 +46,11 @@ export const Bottom = styled.div`
   display: flex;
   flex: 3;
   margin: 20px;
-
 `
+
 export const Product = styled.div`
   display: flex;
   flex: 3;
-
 `
 
 export const ProductDetail = styled.div`
@@ -93,21 +92,28 @@ export const ProductSize = styled.span`
 
 export const PriceDetail = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex: 1;
-
+  justify-content: space-evenly;
+  align-items: center;
 `
 export const ProductAmountContainer = styled.div`
-  display: flex;
-  aling-items: center;
+  padding: 2px;
+  border-radius: 5px;
 
+  & svg{
+    height: 1.2em;
+    width: 1.2em;
+    cursor: pointer;
+    :hover{
+      color: teal;
+      transform: scaleX(1.2);
+    }
+  }
 `
 
 export const ProductAmount = styled.div`
   font-size: 24px;
-  margin: 5px;
+  text-align: center;
 `
 
 export const ProductPrice = styled.div`
@@ -116,7 +122,7 @@ export const ProductPrice = styled.div`
 `
 
 export const Summary = styled.div`
-  flex: 1;
+  flex: 2;
   background-color: red;
 `
 
