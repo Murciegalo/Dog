@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mobile } from '../../responsive'
 
 const Container = styled.div`
   height:60vh;
@@ -7,17 +8,21 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  ${mobile({height: '40vh'})}
 `
 
 const Title = styled.h1`
   font-size: 60px;
   margin: 15px;
+  ${mobile({fontSize: '34px'})}
 `
 
 const Description = styled.div`
   font-size: 24px;
   font-weight: bolder;
   margin: 15px;
+  ${mobile({textAlign: 'center'})}
+  ${mobile({fontSize: '20px'})}
 `
 
 const InputContainer = styled.div`
@@ -28,6 +33,7 @@ const InputContainer = styled.div`
   justify-content: space-between;
   border: none;
   margin: 10px;
+  ${mobile({width: '100%'})}
 `
 
 const Input = styled.input`

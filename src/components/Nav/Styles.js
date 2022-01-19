@@ -16,11 +16,11 @@ const Left = styled.div`
   flex:1;
   display: flex;
   align-items: center;
+  ${mobile({display: 'none'})}
 `
 const Language = styled.span`
   font-size: 14;
   cursor: pointer;
-  ${mobile({display: 'none'})}
 `
 const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
