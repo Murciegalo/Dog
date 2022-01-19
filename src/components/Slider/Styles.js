@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mobile } from '../../responsive'
 
 const Container = styled.div`
   width: 100%;
@@ -6,6 +7,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  ${mobile({ height: '200px'})}
 `
 const Arrow = styled.div`
   width: 50px;
@@ -23,6 +25,7 @@ const Arrow = styled.div`
   margin: auto;
   cursor: pointer;
   opacity: 0.7;
+  z-index: 4;
 `
 const Wrapper = styled.div`
   height: 100%;
@@ -38,18 +41,23 @@ const Slide = styled.div`
   display: flex;  
   align-items: center;
   background-color: ${ props => props.bg};
+  ${mobile({ height: '200px'})}
 `
 const ImgContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  ${mobile({ height: '200px'})}
+  ${mobile({ alignItems: 'center'})}
 `
 const Image = styled.img`
+  ${mobile({ height: '180px'})}
 `
 const InfoContainer = styled.div`
   flex: 1;
   width: 50%;
   padding: 50px;
+  ${mobile({ display: 'none'})}
 `
 const Title = styled.h1`
   font-size: 70px;
