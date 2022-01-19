@@ -24,6 +24,7 @@ export const Top = styled.div`
 `
 
 export const TopButton = styled.button`
+  margin: ${props => props.type === 'filled' && '20px'};
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -38,6 +39,7 @@ export const TopTexts = styled.div`
 export const Text = styled.div`
   font-size: 20px;
   text-decoration: underline;
+  letter-spacing: .1em;
   cursor: pointer;
   margin: 0 10px;
 `
@@ -69,26 +71,28 @@ export const Details = styled.div`
 
 export const ProductName = styled.span`
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 18px;
 `
 
 export const ProductId = styled.span`
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 18px;
 `
 
 export const ProductColor = styled.span`
+  display: block;
   width: 20px;
   height: 20px;
+  margin-left: 20px;
   border-radius: 50%;
   background-color: ${props => props.color}
 `
 
 export const ProductSize = styled.span`
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 18px;
 `
 
@@ -97,6 +101,7 @@ export const PriceDetail = styled.div`
   flex: 1;
   justify-content: space-evenly;
   align-items: center;
+  border-left: 2px solid #eee;
 `
 export const ProductAmountContainer = styled.div`
   padding: 2px;
@@ -136,3 +141,19 @@ export const Summary = styled.div`
   padding: 20px;
 `
 
+export const SumItem = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 5px 0;
+  font-size: ${props => props.type === 'total' && '22px'};
+  font-weight: ${props => props.type === 'total' && 'bold'};
+  margin-top: ${props => props.type === 'total' && '25px'};
+  color: ${props => props.type === 'total' && 'teal'};
+`
+
+export const SumItemText = styled.div`
+`
+
+export const SumItemPrice = styled.div`
+`

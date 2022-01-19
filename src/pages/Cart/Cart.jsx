@@ -23,7 +23,10 @@ import {
   ProductAmount,
   ProductPrice,
   Hr,
-  Summary
+  Summary,
+  SumItem,
+  SumItemText,
+  SumItemPrice
 } from "./Cart.styles"
 import { Add, Remove } from '@material-ui/icons'
 
@@ -41,7 +44,6 @@ const Cart = () => {
             <Text>Shopping Bag(2)</Text>
             <Text>Your Wishlist(0)</Text>
           </TopTexts>
-          <TopButton type='filled'>Checkout</TopButton>
         </Top>
         <Bottom>
           <Product>
@@ -62,7 +64,20 @@ const Cart = () => {
               </ProductAmountContainer>
               <ProductPrice>$ 300</ProductPrice>
             </PriceDetail>
-          <Summary>Summary</Summary>
+            <Summary>
+              <SumItem>
+                <SumItemText>Subtotal</SumItemText>
+                <SumItemPrice>$ 80</SumItemPrice>
+              </SumItem>
+              <SumItem>
+                <SumItemText>Shipping</SumItemText>
+                <SumItemPrice>$ 5.90</SumItemPrice>
+              </SumItem>
+              <SumItem type='total'>
+                <SumItemText>Total</SumItemText>
+                <SumItemPrice>$ 85.90</SumItemPrice>
+              </SumItem>
+            </Summary>
           </Product>
           <Hr color='#eee'/>
           <Product>
@@ -83,9 +98,8 @@ const Cart = () => {
               </ProductAmountContainer>
               <ProductPrice>$ 300</ProductPrice>
             </PriceDetail>
-            <Summary>Summary</Summary>
           </Product>
-          
+          <TopButton type='filled'>Checkout</TopButton>
         </Bottom>
       </Wrapper>
       <Footer />
