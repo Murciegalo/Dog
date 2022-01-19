@@ -22,7 +22,7 @@ const Nav = () => {
         <Left>
           <Language>Sp</Language>
           <SearchContainer>
-            <Input />
+            <Input placeholder='Search'/>
             <Search style={{
               color: "grey",
               fontSize: 16
